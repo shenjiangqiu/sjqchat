@@ -1,0 +1,17 @@
+[package]
+name = "sjqchat"
+version = "0.1.0"
+edition = "2021"
+description = "sjqchat"
+license = "MIT"
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[[bin]]
+name = "sjqchatclient"
+path = "src/client/main.rs"
+
+[[bin]]
+name = "sjqchatserver"
+path = "src/server/main.rs"
+
+
+[dependencies]
