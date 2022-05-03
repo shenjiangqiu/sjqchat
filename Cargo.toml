@@ -1,6 +1,6 @@
 [package]
 name = "sjqchat"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 description = "sjqchat"
 license = "MIT"
@@ -9,9 +9,21 @@ license = "MIT"
 name = "sjqchatclient"
 path = "src/client/main.rs"
 
+
 [[bin]]
 name = "sjqchatserver"
 path = "src/server/main.rs"
 
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+
 
 [dependencies]
+futures = "0.3.21"
+js-sys = "0.3.57"
+redis = "0.21.5"
+tokio = "1.18.0"
+warp = "0.3.2"
+wasm-bindgen = "0.2.80"
+yew = "0.19.3"
